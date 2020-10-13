@@ -9,7 +9,7 @@ def add(x, y, MAX_COUNT):
     z = x + y
     print(str(MAX_COUNT) + ' times, ' +  str(z))
 
-    if (z < 100) or (MAX_COUNT <= 10):
+    if (z > 100) or (MAX_COUNT >= 10):
         add(x + 10, y + 10, MAX_COUNT + 1)
 
     return x + y
